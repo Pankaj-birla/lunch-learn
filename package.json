@@ -1,0 +1,29 @@
+{
+	"name": "lunch-learn",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.8.19",
+		"@types/ws": "^8.18.1",
+		"prisma": "^6.9.0",
+		"typescript": "^5.5.2",
+		"vitest": "~3.2.0",
+		"wrangler": "^4.20.0"
+	},
+	"dependencies": {
+		"@neondatabase/serverless": "^0.8.0",
+		"@prisma/adapter-neon": "^5.10.0",
+		"@prisma/client": "^5.22.0",
+		"@prisma/extension-accelerate": "^2.0.1",
+		"hono": "^4.7.11",
+		"ws": "^8.18.2",
+		"zod": "^3.25.64"
+	}
+}
